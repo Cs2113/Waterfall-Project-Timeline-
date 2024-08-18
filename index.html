@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfall Project Timeline Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Waterfall Project Timeline Tool</h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Add Project Phase</h2>
+            <form id="phaseForm">
+                <input type="text" id="phaseName" placeholder="Phase Name" required>
+                <input type="number" id="duration" placeholder="Duration (days)" required>
+                <button type="submit">Add Phase</button>
+            </form>
+        </section>
+
+        <section class="timeline-section">
+            <h2>Project Timeline</h2>
+            <div class="timeline-container" id="timelineContainer"></div>
+        </section>
+
+        <section class="actions">
+            <button id="exportTimeline">Export Timeline as JSON</button>
+        </section>
+    </main>
+
+    <script src="first.js"></script>
+</body>
+</html>
+
